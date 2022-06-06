@@ -2,7 +2,5 @@ FROM ubuntu:latest
 WORKDIR /dolly
 ENV MY_APP=dollyenv
 RUN echo "hello dolly"
-COPY . .
+RUN docker run
 CMD ["echo", "welcome"]
-
-
