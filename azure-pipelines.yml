@@ -26,6 +26,5 @@ stages:
         repository: 'harshi09/azuredevops'
         command: 'buildAndPush'
         Dockerfile: '$(Build.SourcesDirectory)/Dockerfile.txt'
-        tags:
-          $ (tag)
+
     
