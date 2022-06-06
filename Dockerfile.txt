@@ -1,0 +1,8 @@
+FROM ubuntu:latest
+WORKDIR /dolly
+ENV MY_APP=dollyenv
+RUN echo "hello dolly"
+COPY . .
+CMD ["echo", "welcome"]
+
+
