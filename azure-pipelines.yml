@@ -26,5 +26,10 @@ stages:
         repository: 'harshi09/azuredevops'
         command: 'buildAndPush'
         Dockerfile: '$(Build.SourcesDirectory)/Dockerfile.txt'
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'azuredevopsconnection'
+        command: 'start'
+        container: 'dollycontainer'
 
     
